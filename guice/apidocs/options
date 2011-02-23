@@ -1,0 +1,51 @@
+-classpath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/target/classes:/home/hazen/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/hazen/.m2/repository/com/google/inject/guice/3.0-RC2/guice-3.0-RC2.jar:/home/hazen/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/home/hazen/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/hazen/.m2/repository/junit/junit/4.8.1/junit-4.8.1.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2008-05-19-2011 <a href="http://www.cs.cmu.edu/">Carnegie Mellon University</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'CMU Commons Guice 1.1.1 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/collections/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/collections/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/core/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/core/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/data/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/data/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hadoop/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hadoop/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hibernate/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/indri/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/mojos/exec/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/mojos/exec/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/unicode/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/unicode/target/site/apidocs'
+-tag
+"goal:a"
+-tag
+"requiresDependencyResolution:a"
+-tag
+"parameter:a"
+-tag
+"required:a"
+-tag
+"readonly:a"
+-use
+-version
+-windowtitle
+'CMU Commons Guice 1.1.1 API'

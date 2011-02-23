@@ -1,0 +1,55 @@
+-classpath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/spring/target/classes:/home/hazen/.m2/repository/org/springframework/org.springframework.context/3.0.5.RELEASE/org.springframework.context-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/aopalliance/com.springsource.org.aopalliance/1.0.0/com.springsource.org.aopalliance-1.0.0.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.jdbc/3.0.5.RELEASE/org.springframework.jdbc-3.0.5.RELEASE.jar:/home/hazen/Workspaces/main/cmu-commons/target/checkout/core/target/core-1.1.1.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.beans/3.0.5.RELEASE/org.springframework.beans-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.transaction/3.0.5.RELEASE/org.springframework.transaction-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.asm/3.0.5.RELEASE/org.springframework.asm-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.aop/3.0.5.RELEASE/org.springframework.aop-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/hazen/Workspaces/main/cmu-commons/target/checkout/collections/target/collections-1.1.1.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.core/3.0.5.RELEASE/org.springframework.core-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.orm/3.0.5.RELEASE/org.springframework.orm-3.0.5.RELEASE.jar:/home/hazen/.m2/repository/org/springframework/org.springframework.expression/3.0.5.RELEASE/org.springframework.expression-3.0.5.RELEASE.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/spring/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2008-05-19-2011 <a href="http://www.cs.cmu.edu/">Carnegie Mellon University</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/spring/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'CMU Commons Spring 1.1.1 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/collections/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/collections/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/core/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/core/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/data/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/data/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/guice/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hadoop/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hadoop/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hibernate/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/indri/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/mojos/exec/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/mojos/exec/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/mtj/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/mtj/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/unicode/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/unicode/target/site/apidocs'
+-tag
+"goal:a"
+-tag
+"requiresDependencyResolution:a"
+-tag
+"parameter:a"
+-tag
+"required:a"
+-tag
+"readonly:a"
+-use
+-version
+-windowtitle
+'CMU Commons Spring 1.1.1 API'

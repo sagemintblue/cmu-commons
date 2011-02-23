@@ -1,0 +1,14 @@
+edu.cmu.commons.data.validation.validators
+edu.cmu.commons.data.dao.fs
+edu.cmu.commons.data.dao
+edu.cmu.commons.data.dao.git
+edu.cmu.commons.data.dao.jpa
+edu.cmu.commons.data.dao.mongo.jap
+edu.cmu.commons.data.dao.mongo
+edu.cmu.commons.data.dao.mongo.reflect
+edu.cmu.commons.data.io
+edu.cmu.commons.data.io.protobuf
+edu.cmu.commons.data.io.jaxb
+edu.cmu.commons.data.io.protostuff
+edu.cmu.commons.data.io.xstream
+edu.cmu.commons.data.reflect

@@ -1,0 +1,51 @@
+-classpath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/classes:/home/hazen/.m2/repository/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar:/home/hazen/.m2/repository/lemurproject/indri/2.12/indri-2.12.jar:/home/hazen/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/hazen/.m2/repository/org/antlr/antlr-runtime/3.3/antlr-runtime-3.3.jar:/home/hazen/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/hazen/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/src/main/java:/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/generated-sources/antlr3'
+-author
+-bottom
+'Copyright &#169; 2008-05-19-2011 <a href="http://www.cs.cmu.edu/">Carnegie Mellon University</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'CMU Commons Indri 1.1.1 API'
+-link
+'http://java.sun.com/javase/6/docs/api'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/collections/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/collections/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/core/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/core/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/data/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/data/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/guice/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hadoop/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hadoop/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hibernate/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/mojos/exec/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/mojos/exec/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/unicode/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/unicode/target/site/apidocs'
+-tag
+"goal:a"
+-tag
+"requiresDependencyResolution:a"
+-tag
+"parameter:a"
+-tag
+"required:a"
+-tag
+"readonly:a"
+-use
+-version
+-windowtitle
+'CMU Commons Indri 1.1.1 API'

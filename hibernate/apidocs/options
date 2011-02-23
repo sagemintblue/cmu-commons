@@ -1,0 +1,49 @@
+-classpath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/target/classes:/home/hazen/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar:/home/hazen/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar:/home/hazen/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/hazen/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/hazen/.m2/repository/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar:/home/hazen/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/home/hazen/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/hazen/.m2/repository/org/hibernate/hibernate-core/3.6.0.Final/hibernate-core-3.6.0.Final.jar'
+-encoding
+'UTF-8'
+-protected
+-quiet
+-sourcepath
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2008-05-19-2011 <a href="http://www.cs.cmu.edu/">Carnegie Mellon University</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/hazen/Workspaces/main/cmu-commons/target/checkout/hibernate/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'CMU Commons Hibernate 1.1.1 API'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/collections/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/collections/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/core/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/core/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/data/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/data/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/guice/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/guice/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/hadoop/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/hadoop/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/indri/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/indri/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/mojos/exec/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/mojos/exec/target/site/apidocs'
+-linkoffline
+'http://sagemintblue.github.com/cmu-commons/unicode/apidocs' '/home/hazen/Workspaces/main/cmu-commons/target/checkout/unicode/target/site/apidocs'
+-tag
+"goal:a"
+-tag
+"requiresDependencyResolution:a"
+-tag
+"parameter:a"
+-tag
+"required:a"
+-tag
+"readonly:a"
+-use
+-version
+-windowtitle
+'CMU Commons Hibernate 1.1.1 API'
