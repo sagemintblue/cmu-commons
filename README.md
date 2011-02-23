@@ -23,32 +23,6 @@ enhancements you'd like to contribute to the project.
 
 ## Maven Artifacts
 
-CMU Commons module snapshot, release, and third-party artifacts are hosted in a
-Maven repository on GitHub:
-
-<https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/>
-
-To start using CMU Commons module release artifacts within your Maven project, add the following
-sections to your project's `pom.xml` file:
-
-    <project>
-      ...
-      <repositories>
-        <repository>
-          <id>sagemintblue-releases</id>
-          <name>Sagemintblue Releases</name>
-          <url>https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/releases</url>
-          <releases><enabled>true</enabled></releases>
-          <snapshots><enabled>false</enabled></snapshots>
-        </repository>
-      </repositories>
-      ...
-      <dependencies>
-        <dependency>
-          <groupId>edu.cmu.commons</groupId>
-          <artifactId>MODULE_NAME</artifactId>
-          <version>MODULE_VERSION</version>
-        </dependency>
-      </dependencies>
-      ...
-    </project>
+CMU Commons release, snapshot and third-party artifacts are hosted in
+[Maven repositories here on
+GitHub](https://github.com/sagemintblue/sagemintblue-maven-repository).
