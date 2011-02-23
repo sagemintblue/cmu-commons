@@ -15,7 +15,7 @@ You can find project documentation and release information at the following URL:
 
 The primary CMU Commons source repository is hosted on GitHib:
 
-<http://github.com/sagemintblue/cmu-commons>
+<https://github.com/sagemintblue/cmu-commons>
 
 Feel free to clone the repository and send pull requests with any patches or
 enhancements you'd like to contribute to the project.
@@ -26,7 +26,7 @@ enhancements you'd like to contribute to the project.
 CMU Commons module snapshot, release, and third-party artifacts are hosted in a
 Maven repository on GitHub:
 
-<http://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/>
+<https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/>
 
 To start using CMU Commons module release artifacts within your Maven project, add the following
 sections to your project's `pom.xml` file:
@@ -37,7 +37,7 @@ sections to your project's `pom.xml` file:
         <repository>
           <id>sagemintblue-releases</id>
           <name>Sagemintblue Releases</name>
-          <url>http://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/releases</url>
+          <url>https://github.com/sagemintblue/sagemintblue-maven-repository/raw/master/releases</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>false</enabled></snapshots>
         </repository>
