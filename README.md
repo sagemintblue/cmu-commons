@@ -8,7 +8,7 @@ software components developed by various members of the CMU community.
 
 You can find project documentation and release information at the following URL:
 
-<https://sagemintblue.github.com/cmu-commons/>
+<http://sagemintblue.github.com/cmu-commons/>
 
 
 ## Source Repository
