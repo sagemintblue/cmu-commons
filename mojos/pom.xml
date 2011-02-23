@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>edu.cmu.commons</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.1.1</version>
+	</parent>
+	<groupId>edu.cmu.commons.mojos</groupId>
+	<artifactId>parent</artifactId>
+	<packaging>pom</packaging>
+	<name>CMU Commons Mojos</name>
+	<description>Maven plugins</description>
+	<url>http://${dev.host.name}/site/cmu-commons/mojos/</url>
+	<scm>
+		<connection>scm:svn:svn://kodiak.lti.cs.cmu.edu/cmu-commons/trunk/mojos</connection>
+		<developerConnection>scm:svn:svn://kodiak.lti.cs.cmu.edu/cmu-commons/trunk/mojos</developerConnection>
+		<url>http://kodiak.lti.cs.cmu.edu/trac/cmu-commons/browser/trunk/mojos/</url>
+	</scm>
+	<distributionManagement>
+		<site>
+			<id>${dev.host.id}-sites</id>
+			<url>scp://${dev.host.name}:2200/var/www/htdocs/site/cmu-commons/mojos</url>
+		</site>
+	</distributionManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+
+				<!-- reporting -->
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<configuration>
+						<quiet>true</quiet>
+						<detectOfflineLinks>false</detectOfflineLinks>
+						<minmemory>128m</minmemory>
+						<maxmemory>1g</maxmemory>
+						<tags>
+							<tag>
+								<name>requiresDependencyResolution</name>
+								<placement>a</placement>
+							</tag>
+							<tag>
+								<name>parameter</name>
+								<placement>a</placement>
+							</tag>
+							<tag>
+								<name>required</name>
+								<placement>a</placement>
+							</tag>
+							<tag>
+								<name>readonly</name>
+								<placement>a</placement>
+							</tag>
+							<tag>
+								<name>goal</name>
+								<placement>a</placement>
+							</tag>
+						</tags>
+					</configuration>
+				</plugin>
+
+				<!-- tools -->
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.1</version>
+					<configuration>
+						<tagBase>${dev.svn.root}/tags/mojos</tagBase>
+					</configuration>
+				</plugin>
+				
+			</plugins>
+		</pluginManagement>
+	</build>
+	<modules>
+		<module>exec</module>
+	</modules>
+</project>

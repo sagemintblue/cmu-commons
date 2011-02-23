@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constraint-mappings xmlns="http://jboss.org/xml/ns/javax/validation/mapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://jboss.org/xml/ns/javax/validation/mapping http://jboss.org/xml/ns/javax/validation/mapping/validation-mapping-1.0.xsd ">
+	<default-package>edu.cmu.csp.validation.constraints</default-package>
+	<!-- Supply added type support for URL constraint validation -->
+	<constraint-definition annotation="org.hibernate.validator.constraints.URL">
+		<validated-by include-existing-validators="true">
+			<value>edu.cmu.commons.data.validation.validators.URLValidatorForURL</value>
+			<value>edu.cmu.commons.data.validation.validators.URLValidatorForURI</value>
+		</validated-by>
+	</constraint-definition>
+</constraint-mappings>

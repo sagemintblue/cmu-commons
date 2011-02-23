@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/cmu-commons-mtj"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.maven.ide.eclipse.launchconfig.classpathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="edu.cmu.commons.util.Application"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="${string_prompt:Input format:TEXT_COMPROW}&#10;${file_prompt:Input file:${workspace_loc}}&#10;${string_prompt:Output format:BINARY_COMPROW}&#10;${file_prompt:Output file:${workspace_loc}}"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="cmu-commons-mtj"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.maven.ide.eclipse.launchconfig.sourcepathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx1024M&#10;-Dapplication=edu.cmu.commons.mtj.util.MatrixFileConverter"/>
+</launchConfiguration>

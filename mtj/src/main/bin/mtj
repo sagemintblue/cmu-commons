@@ -1,0 +1,114 @@
+#!/bin/bash
+
+#
+# Functions
+#
+
+usage () {
+    cat <<EOF
+
+Usage: $SCRIPT_NAME <action> <command> [args]
+
+Actions:
+  exec  - executes command in foreground
+  start - executes command in background
+  stop  - stops command if started
+
+Commands:
+  convert - conversion utility for matrix files
+
+EOF
+    exit
+}
+
+die () {
+    echo "$1"
+    exit 1
+}
+
+parseArgument () {
+    name="$1"; value="$2"
+    eval "$name=$value"
+    if [ -z "$value" ]; then die "Missing required argument '$name'"; fi
+}
+
+#
+# Main
+#
+
+# determine script name / location
+SCRIPT="$0"
+SCRIPT_NAME=$(basename "$SCRIPT")
+SCRIPT_DIR=$(dirname "$SCRIPT")
+BASEDIR=$(readlink -f "$SCRIPT_DIR/../")
+PLATFORM=$(uname -o)
+
+# parse action argument
+parseArgument action "$1"; shift
+case "$action" in
+    "help" | "--help" | "-h" | "-?" ) usage ;;
+    "exec" | "start" | "stop" ) ;;
+    * ) die "Invalid action '$action'" ;;
+esac
+
+# parse command argument and initialize defaults
+parseArgument command "$1"; shift
+APP_NAME="$command"
+MEMORY_MIN="512M"
+MEMORY_MAX="1024M"
+MAIN_CLASS="edu.cmu.commons.util.Application"
+
+# promote args beginning with "-D" to jvmargs
+for arg in "$@"; do
+    if [ "${arg:0:2}" == "-D" ]; then
+	JVMARGS="$JVMARGS $arg"
+    else
+	ARGS="$ARGS $arg"
+    fi
+done
+
+# customize setup based on command
+case "$command" in
+    "convert" )
+	JVMARGS="$JVMARGS -Dapplication=edu.cmu.commons.mtj.util.MatrixFileConverter" ;;
+    * ) die "Invalid command '$command'" ;;
+esac
+
+# initialize classpath
+CLASSPATH="${BASEDIR}/conf:${BASEDIR}/classes"
+PATH_SEPARATOR=":"
+FIND_EXEC=
+if [ "$PLATFORM" == "Cygwin" ]; then
+    BASEDIR_WIN=$(cygpath -w "$BASEDIR")
+    CLASSPATH="${BASEDIR_WIN}\conf;${BASEDIR_WIN}\classes"
+    PATH_SEPARATOR=";"
+    FIND_EXEC=( -exec cygpath -w '{}' '+' )
+fi
+if [ -f "${BASEDIR}/lib/classpath" ]; then
+    CLASSPATH=${CLASSPATH}${PATH_SEPARATOR}$(cat "${BASEDIR}/lib/classpath")
+fi
+JARS=$(find "${BASEDIR}/lib" -name '*.jar' ${FIND_EXEC[@]} | sed "s/^/${PATH_SEPARATOR}/" | tr -d '\n')
+CLASSPATH=${CLASSPATH}${JARS}
+
+# configure paths to log and pid files
+mkdir -p "$BASEDIR/logs" "$BASEDIR/run"
+LOGFILE="$BASEDIR/logs/$APP_NAME.log"
+PIDFILE="$BASEDIR/run/$APP_NAME.pid"
+
+# perform action on command
+case "$action" in
+    "exec" )
+	exec java \
+	    -cp "$CLASSPATH" -Xms$MEMORY_MIN -Xmx$MEMORY_MAX $JVMARGS $MAIN_CLASS $ARGS
+	;;
+    "start" )
+	java \
+	    -cp "$CLASSPATH" -Xms$MEMORY_MIN -Xmx$MEMORY_MAX $JVMARGS $MAIN_CLASS $ARGS \
+	    >"$LOGFILE" 2>&1 &
+	echo "$!" >"$PIDFILE"
+	;;
+    "stop" )
+	if [ ! -f "$PIDFILE" ]; then echo "Pid file '$PIDFILE' not found"; exit 1; fi
+	kill $(cat "$PIDFILE")
+	;;
+esac
