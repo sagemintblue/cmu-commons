@@ -14,16 +14,22 @@
 		<name>Carnegie Mellon University</name>
 		<url>http://www.cs.cmu.edu/</url>
 	</organization>
+	<licenses>
+		<license>
+			<name>GNU LGPL</name>
+			<url>http://www.gnu.org/licenses/lgpl-3.0-standalone.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 	<developers>
 		<developer>
 			<id>hazen</id>
 			<name>Andy Schlaikjer</name>
-			<email>hazen@cs.cmu.edu</email>
 			<url>http://www.cs.cmu.edu/~hazen/</url>
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:ssh://git@github.com:sagemintblue/cmu-commons.git</connection>
+		<connection>https://github.com/sagemintblue/cmu-commons.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com:sagemintblue/cmu-commons.git</developerConnection>
 		<url>https://github.com/sagemintblue/cmu-commons</url>
 	</scm>
@@ -44,12 +50,12 @@
 		</snapshotRepository>
 		<site>
 			<id>cmu-commons-site</id>
-			<url>scp://localhost/${site.path}</url>
+			<url>file://${site.path}</url>
 		</site>
 	</distributionManagement>
 	<properties>
-		<repository.path>${basedir}/../sagemintblue-maven-repository</repository.path>
-		<site.path>${basedir}/../cmu-commons-site</site.path>
+		<repository.path>${user.home}/Projects/sagemintblue-maven-repository</repository.path>
+		<site.path>${user.home}/Projects/cmu-commons-site</site.path>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.slf4j.version>1.6.1</org.slf4j.version>
 		<org.springframework.version>3.0.5.RELEASE</org.springframework.version>
@@ -149,6 +155,26 @@
 					<configuration>
 						<reportPlugins>
 							<plugin>
+								<artifactId>maven-project-info-reports-plugin</artifactId>
+								<configuration>
+									<dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+									<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+								</configuration>
+								<reports>
+									<report>dependencies</report>
+									<report>distribution-management</report>
+									<report>index</report>
+									<report>issue-tracking</report>
+									<report>license</report>
+									<report>mailing-list</report>
+									<report>modules</report>
+									<report>plugins</report>
+									<report>project-team</report>
+									<report>scm</report>
+									<report>summary</report>
+								</reports>
+							</plugin>
+							<plugin>
 								<artifactId>maven-javadoc-plugin</artifactId>
 								<configuration>
 									<quiet>true</quiet>
@@ -182,37 +208,6 @@
 								</configuration>
 								<reports>
 									<report>javadoc</report>
-								</reports>
-							</plugin>
-							<plugin>
-								<artifactId>maven-project-info-reports-plugin</artifactId>
-								<configuration>
-									<dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-									<dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-								</configuration>
-								<reports>
-									<report>dependencies</report>
-									<report>distribution-management</report>
-									<report>index</report>
-									<report>issue-tracking</report>
-									<report>license</report>
-									<report>mailing-list</report>
-									<report>modules</report>
-									<report>plugins</report>
-									<report>project-team</report>
-									<report>scm</report>
-									<report>summary</report>
-								</reports>
-							</plugin>
-							<plugin>
-								<artifactId>maven-changes-plugin</artifactId>
-								<configuration>
-									<query>component=${project.groupId}.${project.artifactId}&amp;status=accepted&amp;status=assigned&amp;status=new&amp;status=reopened&amp;order=priority</query>
-									<tracUser>${cmu-commons.trac.reporting.username}</tracUser>
-									<tracPassword>${cmu-commons.trac.reporting.password}</tracPassword>
-								</configuration>
-								<reports>
-									<report>trac-report</report>
 								</reports>
 							</plugin>
 						</reportPlugins>

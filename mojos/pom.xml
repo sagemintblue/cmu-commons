@@ -10,16 +10,11 @@
 	<packaging>pom</packaging>
 	<name>CMU Commons Mojos</name>
 	<description>Maven plugins</description>
-	<url>http://${dev.host.name}/site/cmu-commons/mojos/</url>
-	<scm>
-		<connection>scm:svn:svn://kodiak.lti.cs.cmu.edu/cmu-commons/trunk/mojos</connection>
-		<developerConnection>scm:svn:svn://kodiak.lti.cs.cmu.edu/cmu-commons/trunk/mojos</developerConnection>
-		<url>http://kodiak.lti.cs.cmu.edu/trac/cmu-commons/browser/trunk/mojos/</url>
-	</scm>
+	<url>http://sagemintblue.github.com/cmu-commons/mojos/</url>
 	<distributionManagement>
 		<site>
-			<id>${dev.host.id}-sites</id>
-			<url>scp://${dev.host.name}:2200/var/www/htdocs/site/cmu-commons/mojos</url>
+			<id>cmu-commons-site</id>
+			<url>file://${site.path}/mojos/</url>
 		</site>
 	</distributionManagement>
 	<build>
@@ -56,15 +51,6 @@
 								<placement>a</placement>
 							</tag>
 						</tags>
-					</configuration>
-				</plugin>
-
-				<!-- tools -->
-				<plugin>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.1</version>
-					<configuration>
-						<tagBase>${dev.svn.root}/tags/mojos</tagBase>
 					</configuration>
 				</plugin>
 				
