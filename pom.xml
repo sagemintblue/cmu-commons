@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.cmu.commons</groupId>
 	<artifactId>parent</artifactId>
-	<version>1.1.2-SNAPSHOT</version>
+	<version>1.1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>CMU Commons</name>
 	<url>http://sagemintblue.github.com/cmu-commons/</url>
@@ -507,57 +507,57 @@
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>collections</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>core</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>data</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>guice</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>hadoop</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>hibernate</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>indri</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons.mojos</groupId>
 				<artifactId>exec</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>mtj</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>spring</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 			<dependency>
 				<groupId>edu.cmu.commons</groupId>
 				<artifactId>unicode</artifactId>
-				<version>1.1.2-SNAPSHOT</version>
+				<version>1.1.1-SNAPSHOT</version>
 			</dependency>
 
 		</dependencies>
