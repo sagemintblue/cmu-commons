@@ -29,7 +29,7 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>https://github.com/sagemintblue/cmu-commons.git</connection>
+		<connection>scm:git:https://github.com/sagemintblue/cmu-commons.git</connection>
 		<developerConnection>scm:git:ssh://git@github.com/sagemintblue/cmu-commons.git</developerConnection>
 		<url>https://github.com/sagemintblue/cmu-commons</url>
 	</scm>
