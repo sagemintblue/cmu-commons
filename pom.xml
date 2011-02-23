@@ -236,7 +236,7 @@
 					<artifactId>maven-release-plugin</artifactId>
 					<version>2.1</version>
 					<configuration>
-						<tagBase>${dev.svn.root}/tags</tagBase>
+						<pushChanges>false</pushChanges>
 					</configuration>
 				</plugin>
 
