@@ -27,7 +27,7 @@ CMU Commons release, snapshot and third-party artifacts are hosted in Maven
 repositories here on GitHub. Follow the instructions at the following URL in
 order to configure Maven to make use of these repositories:
 
-<https://github.com/sagemintblue/sagemintblue-maven-repository/>
+<https://github.com/sagemintblue/sagemintblue-maven-repositories/>
 
 Some required dependencies are available in other Maven repositories around the
 Web, but not in Maven Central. Here is a list of further `<repository>` entries
